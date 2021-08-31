@@ -1,0 +1,123 @@
+
+/*Обнуление*/
+*{	padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{	-moz-box-sizing: border-box;-webkit-box-sizing: border-box;	box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%;	font-size: 100%;line-height: 1;	font-size: 14px;	-ms-text-size-adjust: 100%;	-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+$oracol: #dd3311;
+
+/*--------------------*/
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+	background: linear-gradient(to bottom, #555 0%,#333 100%);
+	background-repeat: no-repeat;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 25px 0;
+	background-color: #666;
+	box-shadow: 0 -3px 6px #000;
+	margin-bottom: 20px;
+
+}
+
+.title{
+	font-family: serif;
+	font-size: 40px;
+	margin-left: 10px;
+	text-shadow: 1px 1px 2px #000;
+}
+
+.header-list {
+	display: flex;
+}
+
+.list-item {
+	margin-right: 20px;
+
+}
+.center-part {
+	display: flex;
+	font-size: 15px;
+}
+.nav-content {
+	display: flex;
+	flex-flow: column wrap;
+	padding-right: 40px;
+}
+.nav-link {
+	line-height: 15px;
+	color:#fff;
+	text-shadow: 1px 1px 3px #222;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	transition: all 0.3s ease-out;
+	&:hover{
+		color: $oracol;
+		text-shadow: 0 0 4px #000;
+	}
+	&:active{
+		color: yellow;
+	}
+}
+.main-content {
+	height: 75%;
+	margin-bottom: 50px;
+}
+.main-title {
+	margin-bottom: 10px;
+	font-size: 23px;
+}
+.main-image {
+	float: left;
+	margin-right: 20px;
+}
+.main-inscr {
+	display: block;
+	&:first-letter{
+		font-size: 30px;
+		color: $oracol
+	}
+}
+.footer {
+	background: #333;
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+//		&:before:last-child{
+//		content:"fdjgh;dg";
+//	}
+}
+
+.footer-row {
+	display: flex;
+	flex-flow: column wrap;
+	padding: 5px 10px;
+}
+
+.footer-link {
+	color: #fff;
+	transition: all 0.3s ease-out;
+	&:hover{
+		color: $oracol;
+	}
+}
